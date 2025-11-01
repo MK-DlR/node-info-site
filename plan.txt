@@ -1,0 +1,16 @@
+1. create project directory with:
+    a. index.html
+    b. about.html
+    c. contact-me.html
+    d. 404.html
+
+2. create node.js server file (index.js)
+    a. add code needed to get to right page according to url
+        a1. localhost:8080
+            - index
+        a2. localhost:8080/about
+            - about
+        a3. localhost:8080/contact-me
+            - contact me
+        a4. 404
+            - any other page/url

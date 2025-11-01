@@ -1,0 +1,9 @@
+11/1/25:
+
+- Add navigation header for different pages
+- Create index.js file
+- Create 404, about, contact-me, and index pages
+
+10/30/25:
+
+- General set up
