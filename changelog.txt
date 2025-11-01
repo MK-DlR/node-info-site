@@ -1,5 +1,7 @@
 11/1/25:
 
+- Convert to express code (index.js to app.js)
+- Install express
 - Add navigation header for different pages
 - Create index.js file
 - Create 404, about, contact-me, and index pages

@@ -1,5 +1,6 @@
-// index.js
+// app.js
 
+/*
 const http = require("http");
 const fs = require("fs");
 
@@ -46,4 +47,32 @@ const server = http.createServer((req, res) => {
 // run on 3000 since 8080 is already used by another application
 server.listen(3000, "localhost", () => {
   console.log("listening for requests on port 3000");
+});
+*/
+
+const express = require("express");
+
+// express app
+const app = express();
+
+// listen for requests
+// running on port 3006
+app.listen(3006);
+
+app.get("/", (req, res) => {
+  res.sendFile("./pages/index.html", { root: __dirname });
+});
+
+app.get("/about", (req, res) => {
+  res.sendFile("./pages/about.html", { root: __dirname });
+});
+
+app.get("/contact-me", (req, res) => {
+  res.sendFile("./pages/contact-me.html", { root: __dirname });
+});
+
+// 404 page
+// at bottom so it fires last
+app.use((req, res) => {
+  res.status(404).sendFile("./pages/404.html", { root: __dirname });
 });
